@@ -9,9 +9,11 @@
       <li
         v-for="task in tasks"
         :key="task.id"
-        :class="{ completed: task.completed }"
       >
-        <p id="display_task">{{ task.name }}</p>
+        <p id="display_task"
+        :class="{ completed: task.completed }"
+          >{{ task.name }}
+        </p>
         <button @click="completeTask(task.id)">Marquer comme terminée</button>
         <button @click="removeTask(task.id)">Supprimer</button>
       </li>
