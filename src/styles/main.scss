@@ -56,13 +56,16 @@ button {
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   @media screen and (max-width: 715px) {
-    align-items: center;
+    align-items: flex-start;
     margin: 10px;
 }
 }
 
 button[type="submit"] {
   margin-left: 20px;
+  @media screen and (max-width: 715px) {
+    margin-left: 0;
+}
 }
 
 .completed {
@@ -73,4 +76,7 @@ button[type="submit"] {
 #display_task {
   font-family: "Montserrat";
   width: 25%;
+  @media screen and (max-width: 715px) {
+    width: auto;
+}
 }
